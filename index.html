@@ -16,7 +16,6 @@
 
     <title>Document</title>
 </head>
-
 <body>
     <nav class="navbar navbar-dark  navbar-expand-sm fixed-top">
         <div class="container">
@@ -25,7 +24,7 @@
             </button>
             <a class="navbar-brand mr-auto" href="#">Library managment system</a>
             <ul class="navbar-nav justify-content-end">
-                <li class="nav-item"><a class="nav-link" href="#"><span
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
                             class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
 
@@ -50,20 +49,21 @@
         <div class="modal-dialog modal-sm" role="content">
             <div class="modal-content">
                 <div class="modal-header">
-                    <div class="dropdown">
-                        <a class="btn btn-primary dropdown-toggle btn-lg" href="#" role="button" id="dropdownMenuLink"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="fa fa-sign-in"></span>&nbsp;&nbsp;&nbsp;&nbsp;Login as
-                        </a>
-
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" onclick="studentForm()"><i class="icofont-group-students"></i>
-                                Student</span></a>
-                            <a class="dropdown-item" onclick="officerForm()"><i class="icofont-user-suited"></i>
-                                Officer</a>
-
-                        </div>
-                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" onclick="studentForm()" type="radio" name="studentRadios" id="studentRadios" value="student">
+                        <label class="form-check-label" for="exampleRadios1">
+                            <i class="icofont-group-students"></i>
+                            Login as Student
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" onclick="officerForm()" type="radio" name="officerRadios" id="officerRadios" value="officer">
+                        <label class="form-check-label" for="exampleRadios2">
+                            <i class="icofont-user-suited"></i>
+                            Login as Admin
+                        </label>
+                      </div>
+                    
 
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -97,6 +97,7 @@
             </div>
         </div>
     </div>
+
 
 
 
