@@ -41,14 +41,14 @@ body{
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/bg.jpg") top right no-repeat;
+    background: url("../image/bg.jpg") top right no-repeat;
     background-size: cover;
     position: relative;
   }
  #head{
     width: 100%;
     height: 60vh;
-    background: url("../img/head.jpg") top right no-repeat;
+    background: url("../image/head.jpg") top right no-repeat;
     background-size: cover;
     position: relative;
  } 
