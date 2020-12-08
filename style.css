@@ -1,0 +1,138 @@
+/*@media screen and (orientation:landscape){
+*{
+	margin-left: 0.1% auto;
+	margin-right: 0.1% auto;
+}
+@viewport{
+	zoom:1.0;
+	width:extend-to-zoom;
+}
+@-ms-viewport{
+	width:extend-to-zoom;
+	zoom:1.0;
+}*/
+*{
+	margin-top:5% auto;
+	margin-left: 0.1% auto;
+	margin-right: 0.1% auto;
+}
+body{
+	background-color:black;
+	color:white;
+}
+/*Home*/
+.nav1{
+	list-style-type:none;
+	 background-color:#2f4f4f;
+	text-align:center;
+	flex:100%;
+	display:flex;
+	display:flex-grow;
+	margin:0;
+	padding:0;
+	min-height:4vh;
+}
+.nav1 li{
+	display:inline-block;
+	flex-grow:1;
+	display:flex-grow;
+	font-size:  2.2vw;;
+	position: relative;
+	z-index: 1;
+}
+.nav1 a{
+	text-decoration:none;
+	color:white;
+	position: relative;
+}
+.nav1 a:hover{
+	text-decoration:underline;	
+}	
+.h1{
+	text-align:center;
+	font-size:5vh;
+	color:crimson;
+}
+.h2{
+	text-align:center;
+	font-family: 'Kaushan Script';	
+	color:#db7093;
+}
+.div1{
+	text-align:center;
+	/*height:300px;*/
+	vertical-align: middle;
+	font-family: 'Kaushan Script';	
+	color:honeydew;
+}
+.div1::before{
+	content:"";
+	background-image: url("download\ \(1\).jpg");
+	background-repeat: repeat-x;
+	background-size: auto;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.25;
+}
+.h3{
+	font-size:4.2vh;
+	text-align:center;
+}
+
+.link1 li{
+	font-size:4vh;
+	text-align:center;
+	position: relative;
+}
+.link1 a{
+	text-align:center;
+	text-decoration:none;
+	color:white;
+}
+.link1 a:hover{
+	text-decoration:underline;	
+}	
+.link1 ul{
+	list-style: none;
+}
+.book1{
+	float: left;
+	width:45%;
+}
+.book2{
+	display:block;
+	overflow: hidden;
+	width:40%;
+}
+ul{
+	list-style: none;
+}
+.checked {
+	color: orange;
+}
+.button1{
+	background-color:limegreen;
+	padding:2 vw;
+	min-height:20vh;
+}
+/*.left{
+	float: left;
+	width:60%;
+}
+.right{
+	display:block;
+	overflow: hidden;
+	overflow-y: scroll;
+	min-height:400vh;
+}*/
+.book3{
+	float: left;
+	width:50%;
+}
+.book4{
+	display:block;
+	overflow: hidden;
+}

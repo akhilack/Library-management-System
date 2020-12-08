@@ -1,128 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html>
+    
 <head>
-    <!-- Required meta tags -->
+	
+	<title>Home</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/node_modules/font-awesome/css/font-awesome.min.css">
-    <link href="assets/node_modules/icofont/icofont.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <title>Document</title>
+    <link rel="stylesheet"type="text/css"href="style.css">
+	
 </head>
 <body>
-    <nav class="navbar navbar-dark  navbar-expand-sm fixed-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand mr-auto" href="#">Library managment system</a>    
-        </div>
-    </nav>
-
-
-    <section id="hero" class="d-flex align-items-center">
-        <div class="container d-flex flex-column align-items-center">
-            <div class="p-3 mb-2 bg-primary text-white">
-                <h1>Nothing is pleasanter than exploring a LIBRARY</h1>
-            </div>
-
-            <br>
-            <a class="btn btn-warning btn-lg " data-toggle="modal" data-target="#loginModal">
-                <span class="fa fa-sign-in" ></span> Login</a>
-
-        </div>
-    </section>
-    <!-- login model-->
-    <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-sm modal-dialog-centered" role="content">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="row">
-                       <div class="col-12">
-                         <div class="form-check">
-                             <input class="form-check-input" onclick="studentForm()" type="radio" name="Radios" id="studentRadios" value="student">
-                             <label class="form-check-label" for="exampleRadios1">
-                                  <i class="icofont-group-students"></i>
-                                 <h5> Login as Student</h5>
-                            </label>
-                         </div>
-                       </div>
-                       <div class="col-12">
-                         <div class="form-check">
-                            <input class="form-check-input" onclick="officerForm()" type="radio" name="Radios" id="officerRadios" value="officer">
-                               <label class="form-check-label" for="officerRadios">
-                                  <i class="icofont-user-suited"></i>
-                                   <h5>Login as Admin</h5>
-                               </label>
-                         </div>
-                       </div>
-                    </div>
-                    
-
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-popup" id="student">
-                        <form  class="form-container">
-                            <label class="mx-auto" style="color: black;"><b>Student</b></label>
-                            <input type="text" placeholder="username" name="username" required>
-                            <input type="password" class="fa fa-home" placeholder="Enter Password" name="password"
-                                required>
-                            <a type="submit" class="btn btn-success" href="./student_home.html"><span class="fa fa-sign-in"></span>
-                                Login</a>
-                            <a type="button" class="btn btn-danger cancel" onclick="closeForm()"><i
-                                    class="icofont-exit"></i> Close</a>
-                        </form>
-                    </div>
-                    <div class="form-popup" id="officer">
-                        <form action="/action_page.php" class="form-container">
-                            <label style="color: black;"><b>Officer</b></label>
-                            <input type="text" placeholder="username" name="username" required>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
-                            <a type="submit" class="btn btn-success" href="#"><span class="fa fa-sign-in"></span>
-                                Login</a>
-                            <a type="button" class="btn btn-danger cancel" onclick="closeForm()"><i
-                                    class="icofont-exit"></i> Close</a>
-                        </form>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="assets/node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        function studentForm() {
-            document.getElementById("student").style.display = "block";
-            document.getElementById("officer").style.display = "none";
-        }
-
-        function closeForm() {
-            document.getElementById("student").style.display = "none";
-        }
-        function officerForm() {
-            document.getElementById("officer").style.display = "block";
-            document.getElementById("student").style.display = "none";
-        }
-
-        function closeForm() {
-            document.getElementById("officer").style.display = "none";
-        }
-    </script>
-
-</body>
-
+	<header>
+		<h1 class="h1"><b>LIBRARY MANAGEMENT SYSTEM</b></h1>
+		<br>
+		<ul class="nav1">
+			<li><a href="">HOME</a></li>	
+			<li><a href="index.html">BOOKS</a></li>
+			<li><a href="">AUTHORS</a></li>
+			<li><a href="">REVIEWS</a></li>
+            <li><a href="">BLOGS</a></li>
+            <li><a href="">CONTACT</a></li>
+		</ul>
+		<br>
+		
+		<br>
+	</header>
+	<div class="div1">
+	<h1 class="h3"style="color:sandybrown;"><b>Pick your book from your favourite genre!!</b></h1>
+	<form>
+		<div class="link1">
+			<ul>
+			<li><a href="html/kids.html">Kids</a></li>	
+			<li><a href="html/young.html">Young adults</a></li>
+			<li><a href="html/fiction.html">Fiction</a></li>	
+			<li><a href="html/nonfiction.html">Non-fiction</a></li>
+			<li><a href="html/poems.html">Poems</a></li>
+			<li><a href="html/auto.html">Autobiography/Biography</a></li>
+			</ul>
+			</div>
+	</form>
+</div>
+	
+</body>	
 </html>
